@@ -2,10 +2,12 @@ const main = document.querySelector(".main");
 const videos = document.querySelector(".videos");
 const wrapper = document.querySelector(".wrapper-start");
 const btn = document.querySelector(".btn");
+
 btn.addEventListener("click", () =>{
-    wrapper.classList.add("active");
+    wrapper.classList.remove("active");
     main.classList.add("active");
     videos.play();
+    videos.style.display = "none";
 });
 
 

@@ -4,17 +4,16 @@
     box-sizing: border-box;
 }
 
-.wrapper-start .active{
-    display: none;
-}
-
-.wrapper-start{
+.wrapper-start.active{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
     background-color: lightblue;
+}
+
+.wrapper-start{
+    display: none;
 }
 
 .btn-start{
@@ -31,7 +30,7 @@
     font-weight: 500;
 }
 
-.btn-start a{
+.btn-start .btn{
     text-decoration: none;
     background-color: #99ffff;
     padding: 10px;
@@ -46,7 +45,7 @@
     background-color: #00FFFF;
 }
 
-.main .active{
+.main.active{
     display: block;
     position: relative;
     height: 100vh;
@@ -110,3 +109,4 @@ div.cauchuc.active{
 .right-evelop{
     text-align: center;
 }
+
