@@ -3,21 +3,20 @@ const videos = document.querySelector(".videos");
 const wrapper = document.querySelector(".wrapper-start");
 const btn = document.querySelector(".btn");
 
+let check = 0;
+
 btn.addEventListener("click", () =>{
     wrapper.classList.remove("active");
     main.classList.add("active");
     videos.play();
     videos.style.display = "none";
+    check = 1;
 });
-
 
 if(main){
     const div = document.createElement("div");
     div.innerHTML = `
             <div class="info-evelop">
-                <div class="bg">
-                    <img src="./bg.jpeg" alt="">
-                </div>
                 <div class="purpose">
                     <div class="left-evelop">
                         <div class="cauchuc">
