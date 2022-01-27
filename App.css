@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.wrapper-start{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: lightblue;
+}
+
+.btn-start{
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-start div{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-start a{
+    text-decoration: none;
+    background-color: #99ffff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    transition: 0.5 all ease-in-out;
+}
+
+.btn-start a:hover{
+    background-color: #00FFFF;
+}
+
+.main{
+    /* display: none; */
+    position: relative;
+    height: 100vh;
+}
+
+.bg{
+    max-width: 100%;
+    height: auto;
+}
+.bg img{
+    object-fit: cover;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.info-evelop{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.purpose{
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    color: white;
+    border-radius: 10px;
+}
+
+.left-evelop{
+    text-align: center;
+}
+
+.cauchuc{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: italic;
+    display: none;
+}
+
+div.cauchuc.active{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-style: italic;
+    display: block;
+}
+
+.right-evelop{
+    text-align: center;
+}
