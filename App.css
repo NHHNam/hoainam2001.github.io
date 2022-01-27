@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+.wrapper-start .active{
+    display: none;
+}
 
 .wrapper-start{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    /* display: none; */
     background-color: lightblue;
 }
 
@@ -43,10 +46,15 @@
     background-color: #00FFFF;
 }
 
-.main{
-    /* display: none; */
+.main .active{
+    display: block;
     position: relative;
     height: 100vh;
+}
+
+.main{
+    display: none;
+    
 }
 
 .bg{

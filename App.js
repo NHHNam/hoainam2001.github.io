@@ -1,6 +1,14 @@
 const main = document.querySelector(".main");
+const videos = document.querySelector(".videos");
+const wrapper = document.querySelector(".wrapper-start");
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () =>{
+    wrapper.classList.add("active");
+    main.classList.add("active");
+    videos.play();
+});
 
-// videos.style.display = "none";
+
 if(main){
     const div = document.createElement("div");
     div.innerHTML = `
@@ -48,9 +56,7 @@ if(main){
                     </div>
                 </div>
             </div>
-            <video class="videos" controls loop="true" autoplay="true">
-                <source src="./au1.mp4" type="video/mp4">
-            </video>
+            
     `
     main.appendChild(div);
     const x = document.querySelectorAll(".cauchuc");
@@ -62,10 +68,9 @@ if(main){
             clearInterval(y);
         }
     }, 1000);
-    const videos = document.querySelector(".videos");
-    videos.style.display = "none";
 }
 
 function show(t){
     t.classList.add("active");
 }
+
