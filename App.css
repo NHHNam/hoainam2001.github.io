@@ -108,3 +108,34 @@ div.cauchuc.active{
     text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    .wrapper-start.active{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+    }
+
+    .main.active{
+        display: block;
+        position: relative;
+        height: 100vh;
+    }
+
+    .info-evelop{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+    }
+
+    div.cauchuc.active{
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        font-style: italic;
+        display: block;
+    }
+}
