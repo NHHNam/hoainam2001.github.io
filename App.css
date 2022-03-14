@@ -102,6 +102,7 @@ div.cauchuc.active{
     margin-bottom: 10px;
     font-style: italic;
     display: block;
+    pointer-events: none;
 }
 
 .right-evelop{
